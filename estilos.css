@@ -26,31 +26,37 @@ body{
 
 .imagenes img{
 
-    width: 30%;
-    height: 50vh;
+    width: 50pxpx;
+    height: 100px;
     text-align: start;
     border-radius: 10%;
     overflow: hidden;
 }
 
 .card-image :hover{
-    height: 500px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 5px solid hsl(249, 97%, 50%);
     flex-direction: row;
-    transition: .5s;
+    transition: 3000ms;
 }
 
 .logo img{
     width: 50px;
 }
 
+.card-image{
+    display:inline-block;
+position:relative;
+}
 
 
 
-@media all and (max-width: 1000px){
+
+
+
+@media all and (max-width: 300px){
     img{
     width:180px;
     }
@@ -61,4 +67,25 @@ body{
     }
 
 }
+
+@media only screen and (max-width:600px) {
+    .card-image{
+        display:inline-block;
+        margin-bottom:1em;
+        }
+        .card-image a{
+        position:relative;
+        bottom:0em;
+        right:-3em;
+        background-color:hsl(106, 100%, 28%);
+        color:white;
+        font: size 0.5em;
+        padding:1em 1em;
+        text-transform:uppercase;
+        border-color:#f78989;
+        border-radius:1em;
+        }
+}
+
+
 
